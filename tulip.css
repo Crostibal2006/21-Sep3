@@ -1,0 +1,151 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', 'Arial', serif;
+  line-height: 1.7;
+  padding: 20px;
+  background: linear-gradient(135deg, #162f96 0%, #943d6e 100%);
+  min-height: 100vh;
+  color: #f8e1f4;
+  position: relative;
+}
+
+/* Cabecera */
+header {
+  background: rgba(209, 107, 165, 0.15);
+  color: #f8e1f4;
+  padding: 25px 15px 15px 15px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(45, 58, 110, 0.2);
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 8px #d16ba5;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+nav a {
+  color: #f8e1f4;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 16px;
+  border-radius: 12px;
+  background: rgba(45, 58, 110, 0.3);
+  transition: background 0.2s;
+}
+nav a:hover {
+  background: #d16ba5;
+  color: #2d3a6e;
+}
+
+/* Secciones */
+main {
+  margin-top: 20px;
+}
+
+section {
+  background: rgba(45, 58, 110, 0.4);
+  border-radius: 18px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 16px rgba(209, 107, 165, 0.15);
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #d16ba5;
+  font-family: 'Georgia', serif;
+  margin-bottom: 12px;
+  text-shadow: 1px 1px 6px #2d3a6e;
+}
+
+p {
+  margin-bottom: 16px;
+  font-size: 1.1em;
+}
+
+/* Mensaje especial */
+.sept21-message {
+  background: rgba(19, 7, 13, 0.18);
+  border-left: 6px solid #6d6bd1;
+  padding: 18px 18px 18px 28px;
+  border-radius: 12px;
+  margin-top: 18px;
+  font-style: italic;
+  color: #ec3371;
+  box-shadow: 0 2px 12px rgba(209, 107, 165, 0.12);
+}
+
+/* Imagen */
+img {
+  display: block;
+  margin: 0 auto 18px auto;
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px #130853;
+  border: 3px solid #4840b8;
+}
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  text-align: center;
+  background: #2d3a6e;
+  color: #f8e1f4;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #d16ba5;
+  font-size: 1.1em;
+}
+
+/* Flores decorativas con CSS */
+.flower-deco {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  background: radial-gradient(circle at 30px 30px, #d16ba5 60%, #2d3a6e 100%);
+  border-radius: 50%;
+  opacity: 0.7;
+  z-index: 0;
+}
+.flower-deco.flower1 { top: 30px; left: 30px; }
+.flower-deco.flower2 { top: 80%; left: 10%; }
+.flower-deco.flower3 { top: 60%; right: 8%; }
+.flower-deco.flower4 { bottom: 40px; left: 60%; }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  section {
+    padding: 18px 8px;
+  }
+  img {
+    width: 140px;
+  }
+  .flower-deco {
+    width: 40px;
+    height: 40px;
+  }
+}
